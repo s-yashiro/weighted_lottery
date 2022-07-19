@@ -1,8 +1,6 @@
 # WeightedLottery
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/weighted_lottery`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+WeightedLottery provides weighted randomization by given ratios in Ruby. 
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+WeightedLottery.pick(
+  {
+    "win" => 10,
+    "loose" => 90
+  }
+)
+
+# => "loose"
+# There is a 10% chance of winning.
+```
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/weighted_lottery.
+Bug reports and pull requests are welcome on GitHub at https://github.com/s-yashiro/weighted_lottery.
 
 ## License
 
